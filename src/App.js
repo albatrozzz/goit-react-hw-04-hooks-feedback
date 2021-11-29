@@ -16,15 +16,15 @@ const clickButton = (event) => {
     switch (eventName){
       case 'good':
         console.log('pressed good')
-        setGood(good + 1)
+        setGood(prev => prev +1)
         break
       case 'bad':
         console.log('pressed bad')
-        setBad(bad + 1)
+        setBad(prev => prev +1)
         break
       case 'neutral':
         console.log('pressed neutral')
-        setNeutral(neutral + 1)
+        setNeutral(prev => prev +1)
         break
       default: return
     }
