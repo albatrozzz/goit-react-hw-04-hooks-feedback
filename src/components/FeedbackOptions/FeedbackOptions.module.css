@@ -1,0 +1,11 @@
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+.item:not(:first-child){
+    margin-left: 10px;
+}
+
